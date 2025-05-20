@@ -3,10 +3,10 @@ from fastapi import FastAPI
 from bs4 import BeautifulSoup
 
 app = FastAPI()
-with open("cookie1", "r") as f:
+with open("/etc/secrets/cookie1", "r") as f:
     idf = f.read().strip()
 
-with open("cookie2", "r") as f:
+with open("/etc/secrets/cookie2", "r") as f:
     cfc = f.read().strip()
 
 
